@@ -4,6 +4,92 @@
   /* ── HERO ── */
 
   /* ── Popular Destinations ── */
+  section {
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+
+  .title {
+    display: flex;
+    margin-top: 140px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .titleleft h1 {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    font-size: 64px;
+    font-weight: 400;
+    border-bottom: 3px solid #ff7757;
+  }
+
+  .titleleft .maintext {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 40px;
+  }
+
+  .buttons button {
+    padding: 20px 28px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: #ff7757;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .buttons button:hover {
+    background-color: #172432;
+  }
+
+  .photos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .city {
+    position: relative;
+  }
+
+  .city:not(:first-child) {
+    display: block;
+  }
+
+  .city .image {
+    width: 497px;
+    height: 661px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 26px;
+    display: block;
+  }
+
+  .city .name,
+  .city .location {
+    position: absolute;
+    left: 24px;
+    color: white;
+  }
+
+  .city .name {
+    bottom: 85px;
+    font-size: 28px;
+  }
+
+  .city .location {
+    bottom: 40px;
+    font-size: 24px;
+  }
 
   /* ── Special Offer ── */
 }
