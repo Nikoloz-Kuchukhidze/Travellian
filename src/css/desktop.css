@@ -1,15 +1,149 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
 @media (min-width: 768px) {
   /* ── HEADER ── */
 
+  .header__inner {
+    padding: 32px 182px;
+  }
+
+  .header__logo img {
+    width: 234px;
+    height: 45.6px;
+  }
+
+  .header__nav,
+  .header__actions {
+    display: flex;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .header__menu-item a {
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: 400;
+  }
+
+  .header__menu-item--active a {
+    display: inline-block;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 3px solid var(--color-orange);
+  }
+
+  .header__actions {
+    align-items: center;
+    gap: 36px;
+  }
+
+  .header__login {
+    font-size: 20px;
+    color: var(--color-white);
+  }
+
+  .header__signup {
+    padding: 20px 32px;
+    border-radius: 12px;
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-size: 20px;
+  }
+
   /* ── HERO ── */
+
+  .hero__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 170px;
+    padding: 160px 182px 100px;
+  }
+
+  .hero__title {
+    gap: 16px;
+  }
+
+  .hero__title h1 {
+    font-size: 84px;
+  }
+
+  .hero__title p {
+    font-size: 24px;
+  }
+
+  .booking {
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    width: 1473px;
+    margin-left: -182px;
+    padding-left: 182px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .booking__fields {
+    flex: 1 0 0;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .booking__field {
+    flex: 1 0 0;
+  }
+
+  .booking__label {
+    font-size: 16px;
+  }
+
+  .booking__value {
+    font-size: 20px;
+  }
+
+  .booking__submit {
+    flex-shrink: 0;
+    width: 170px;
+    padding: 60px 20px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .hero__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero__slider-dots {
+    width: 16px;
+    height: 176px;
+  }
+
+  .hero__slider-arrow {
+    width: 14px;
+    height: 28px;
+  }
+
+  .hero {
+    max-width: none;
+    margin: 0;
+  }
+
+  .hero__image {
+    top: -104%;
+    height: 212%;
+  }
 
   /* ── Popular Destinations ── */
   section {
@@ -100,69 +234,69 @@
   }
 
   /* ── Special Offer ── */
-.offers {
-        padding: 80px 80px; /* Reduced excess top padding since title is now inline */
-    }
+  .offers {
+    padding: 80px 80px; /* Reduced excess top padding since title is now inline */
+  }
 
-    .offers .title {
-        text-align: right; 
-        align-self: flex-end; /* Cleanly pushes the title block to the right */
-        gap: 16px;
-        margin-bottom: 60px; /* Creates safe, un-collapsable distance above cards */
-    }
+  .offers .title {
+    text-align: right;
+    align-self: flex-end; /* Cleanly pushes the title block to the right */
+    gap: 16px;
+    margin-bottom: 60px; /* Creates safe, un-collapsable distance above cards */
+  }
 
-    .offers .title h3 {
-        font-size: 64px;
-    }
+  .offers .title h3 {
+    font-size: 64px;
+  }
 
-    .title p {
-        font-size: 24px;
-    }
+  .title p {
+    font-size: 24px;
+  }
 
-    .cards-offer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-    }
+  .cards-offer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 
-    .card {
-        max-width: 390px;
-    }
+  .card {
+    max-width: 390px;
+  }
 
-    /* Make extra cards visible again on desktop */
-    .card:nth-child(n+2) {
-        display: flex;
-    }
+  /* Make extra cards visible again on desktop */
+  .card:nth-child(n + 2) {
+    display: flex;
+  }
 
-    .card > img:first-of-type {
-        height: 250px;
-    }
+  .card > img:first-of-type {
+    height: 250px;
+  }
 
-    .location {
-        font-size: 28px;
-    }
+  .location {
+    font-size: 28px;
+  }
 
-    .futures {
-        font-size: 16px;
-    }
+  .futures {
+    font-size: 16px;
+  }
 
-    .price-details {
-        flex-direction: row;           
-        justify-content: space-between; 
-        align-items: center;            
-        padding: 16px 24px 0 24px;   
-    }
+  .price-details {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px 0 24px;
+  }
 
-    .price-details p {
-        font-size: 20px;
-    }
+  .price-details p {
+    font-size: 20px;
+  }
 
-    .price-details p span {
-        font-size: 36px;
-    }
+  .price-details p span {
+    font-size: 36px;
+  }
 
-    .price-details button {
-        width: auto;
-        padding: 14px 32px;
-    }
+  .price-details button {
+    width: auto;
+    padding: 14px 32px;
+  }
 }
