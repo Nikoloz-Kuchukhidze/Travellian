@@ -135,7 +135,163 @@
     height: 28px;
   }
 
+  .hero {
+    max-width: none;
+    margin: 0;
+  }
+
   /* ── Popular Destinations ── */
+  section {
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+
+  .title {
+    display: flex;
+    margin-top: 140px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .titleleft h1 {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    font-size: 64px;
+    font-weight: 400;
+    border-bottom: 3px solid #ff7757;
+  }
+
+  .titleleft .maintext {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 40px;
+  }
+
+  .buttons button {
+    padding: 20px 28px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: #ff7757;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .buttons button:hover {
+    background-color: #172432;
+  }
+
+  .photos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .city {
+    position: relative;
+  }
+
+  .city:not(:first-child) {
+    display: block;
+  }
+
+  .city .image {
+    width: 497px;
+    height: 661px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 26px;
+    display: block;
+  }
+
+  .city .name,
+  .city .location {
+    position: absolute;
+    left: 24px;
+    color: white;
+  }
+
+  .city .name {
+    bottom: 85px;
+    font-size: 28px;
+  }
+
+  .city .location {
+    bottom: 40px;
+    font-size: 24px;
+  }
 
   /* ── Special Offer ── */
+.offers {
+        padding: 80px 80px; /* Reduced excess top padding since title is now inline */
+    }
+
+    .offers .title {
+        text-align: right; 
+        align-self: flex-end; /* Cleanly pushes the title block to the right */
+        gap: 16px;
+        margin-bottom: 60px; /* Creates safe, un-collapsable distance above cards */
+    }
+
+    .offers .title h3 {
+        font-size: 64px;
+    }
+
+    .title p {
+        font-size: 24px;
+    }
+
+    .cards-offer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .card {
+        max-width: 390px;
+    }
+
+    /* Make extra cards visible again on desktop */
+    .card:nth-child(n+2) {
+        display: flex;
+    }
+
+    .card > img:first-of-type {
+        height: 250px;
+    }
+
+    .location {
+        font-size: 28px;
+    }
+
+    .futures {
+        font-size: 16px;
+    }
+
+    .price-details {
+        flex-direction: row;           
+        justify-content: space-between; 
+        align-items: center;            
+        padding: 16px 24px 0 24px;   
+    }
+
+    .price-details p {
+        font-size: 20px;
+    }
+
+    .price-details p span {
+        font-size: 36px;
+    }
+
+    .price-details button {
+        width: auto;
+        padding: 14px 32px;
+    }
 }
