@@ -4,18 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travelian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/mobile.css" />
     <link rel="stylesheet" href="./src/css/desktop.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <!--HEADER-->
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="./src/img/logo.svg" alt="Travellian" />
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item header__menu-item--active">
+              <a href="#">Home</a>
+            </li>
+            <li class="header__menu-item"><a href="#">Explore</a></li>
+            <li class="header__menu-item"><a href="#">Travel</a></li>
+            <li class="header__menu-item"><a href="#">Blog</a></li>
+            <li class="header__menu-item"><a href="#">Pricing</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a href="#" class="header__login">Login</a>
+          <a href="#" class="header__signup">Sign up</a>
+        </div>
+
+        <button class="header__toggle" type="button" aria-label="Toggle menu">
+          <img src="./src/img/hamburger.svg" alt="" />
+        </button>
+      </div>
     </header>
 
     <main>
       <!--HERO-->
-      <section></section>
+      <section class="hero">
+        <div class="hero__media">
+          <img src="./src/img/hero.jpg" alt="" class="hero__image" />
+          <div class="hero__overlay"></div>
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__title">
+            <h1>
+              <span>Start your unforgettable</span>
+              <span>journey with us.</span>
+            </h1>
+            <p>The best travel for your jouney begins now</p>
+          </div>
+
+          <div class="booking">
+            <div class="booking__fields">
+              <div class="booking__field">
+                <span class="booking__label">Destination</span>
+                <div class="booking__value">
+                  <span>Dubai</span>
+                </div>
+              </div>
+
+              <div class="booking__field">
+                <span class="booking__label">Person</span>
+                <div class="booking__value">
+                  <span>2</span>
+                  <img src="./src/img/chevron-down.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="booking__field">
+                <span class="booking__label">Check in</span>
+                <div class="booking__value">
+                  <span>Sun, 17th Sep 2020</span>
+                  <img src="./src/img/chevron-down.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="booking__field">
+                <span class="booking__label">Check out</span>
+                <div class="booking__value">
+                  <span>Tue, 17th Oct 2020</span>
+                  <img src="./src/img/chevron-down.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="booking__submit">
+              Book Now
+              <img src="./src/img/arrow-book.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="hero__slider">
+          <img src="./src/img/slider-dots.svg" alt="" class="hero__slider-dots" />
+          <img src="./src/img/slider-arrow.svg" alt="" class="hero__slider-arrow" />
+        </div>
+      </section>
 
       <!--Popular Destinations-->
       <section></section>
